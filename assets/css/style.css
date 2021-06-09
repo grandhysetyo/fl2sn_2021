@@ -1,0 +1,118 @@
+.navbar-brand .logo{
+    width: 150px;    
+}
+.navbar-dark .nav-link {
+    width: fit-content;       
+    color: #fff !important;    
+    padding-top: 5px;
+    padding-bottom: 5px;    
+    margin-right: 10px;           
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar-dark .nav-link:hover{
+    border-bottom: 1px solid #1f1f1f;          
+}
+.navbar-dark .nav-link:active{
+    border-bottom: 1px solid #1f1f1f;    
+}
+.navbar-dark .nav-link.masuk{
+    color: #fff !important;
+    background-color: #FAAF40;        
+    padding-left: 35px;
+    padding-right: 35px;        
+}
+.navbar-dark .nav-link.nav-link.masuk:hover{
+    background-color: #e29623;          
+    border-bottom: none;    
+    color: #fff !important;
+}
+.navbar-dark .nav-link.daftar{
+    color: #fff !important;
+    background-color: #EB008B;        
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.navbar-dark .nav-link.nav-link.daftar:hover{
+    background-color: #c20473;  
+    color: #fff !important;   
+    border-bottom: none;             
+}
+.title-section{
+    color: #00ADEE;
+}
+
+/* BANNER */
+.banner{
+    background-color: #00ADEE;
+}
+.slider-banner{
+    height: 300px;
+    background-color: #1f1f1f;
+}
+/* PESERTA ALUMIN */
+.hero-pes-al{
+    display: block;
+    margin: auto;
+    width: 80%;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+.txt-pes-al{
+    display: block;
+    margin-top: 75px;
+}
+
+.txt-pes-al a{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+.txt-pes-al a:hover{
+    text-decoration: none;
+}
+.txt-pes-al .peserta{
+    background-color: #00ADEE;
+}
+.txt-pes-al .alumni{
+    background-color: #EB008B;
+}
+
+/* Informasi Terkini */
+.card-info{
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin: 30px 0;
+    padding: 10%;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.card-info:hover{
+    text-decoration: none;
+    color: #fff;
+
+}
+.card-info.first{
+    background-color: #EB008B;
+}
+.card-info.first:hover{
+    background-color: #c20473;
+}
+.card-info.second{
+    background-color: #00ADEE;
+}
+.card-info.second:hover{
+    background-color: #008ec2;
+}
+.card-info.third{
+    background-color: #FAAF40;
+}
+.card-info.third:hover{
+    background-color: #FAAF40;
+}
