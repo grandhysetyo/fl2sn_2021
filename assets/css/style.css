@@ -351,3 +351,112 @@ footer{
         background-size: cover;
     }
 }
+
+/* PAGE INFORMASI */
+.informasi{
+    display: flex;
+    flex-direction: column;
+}
+.informasi .link-info{
+    margin: 12px 0;
+    color: #333;
+}
+.informasi .link-info:hover{
+    text-decoration: none;    
+}
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Merriweather', serif;
+    display: inline-flex;
+}
+.pagination li a.page-link{
+    color: #333;
+    background: #e7e7e7;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease 0.2s;
+}
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link{
+    color: #fff;
+    background: #EB008B;
+    box-shadow: 0 0 10px -2px rgba(0,0,0,0.3);
+}
+.pagination li:first-child a.page-link,
+.pagination li:last-child a.page-link{
+    line-height: 38px;
+    transition: all 0.5s ease 0s;
+}
+.pagination li a.page-link:before{
+    content: '';
+    background-color: #EB008B;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+}
+.pagination li.active a.page-link:before,
+.pagination li a.page-link:hover:before{
+    opacity: 0;
+    top: 50%;
+}
+.pagination li:first-child a.page-link:before,
+.pagination li:last-child a.page-link:before{
+    display: none;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: block;
+    }
+    .pagination li{
+        display: inline-block;
+        margin: 0 0 10px;
+    }
+}
+
+/* BERITA */
+.berita{
+    display: flex;
+    flex-direction: column;
+}
+.berita .card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.berita .card img{
+    width: 40%;
+    margin-right: 20px;
+    object-position: center;
+    object-fit: cover;
+}
+.card .text-berita{
+    padding: 20px;
+}
+.detail-berita{
+    display: block;
+}
+.detail-berita .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
