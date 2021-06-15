@@ -288,20 +288,20 @@
                     <span class="text-muted txt-span">FLS2N Tingat Provinsi</span>
                     <div class="countdown">
                         <div class="time">
-                            <h2>10</h2>
+                            <h2 id="hari">10</h2>
                             <span>Hari</span>
                         </div>
                         <div class="time">
-                            <h2>10</h2>
-                            <span>Hari</span>
+                            <h2 id="jam">10</h2>
+                            <span>Jam</span>
                         </div>
                         <div class="time">
-                            <h2>10</h2>
-                            <span>Hari</span>
+                            <h2 id="menit">10</h2>
+                            <span>Menit</span>
                         </div>
                         <div class="time">
-                            <h2>10</h2>
-                            <span>Hari</span>
+                            <h2 id="detik">10</h2>
+                            <span>Detik</span>
                         </div>
                         
                     </div>
@@ -444,6 +444,40 @@
             var triggerheight = Math.round(boxheight/itemlength+1);
             $('#vid-pil .list-group-item').outerHeight(triggerheight);
         });
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            
+            document.getElementById("hari").innerHTML = days;
+            document.getElementById("jam").innerHTML = hours;
+            document.getElementById("menit").innerHTML = minutes;
+            document.getElementById("detik").innerHTML = seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("hari").innerHTML = "0";
+                document.getElementById("jam").innerHTML = "0";
+                document.getElementById("menit").innerHTML = "0";
+                document.getElementById("detik").innerHTML = "0";
+            }
+        }, 1000);
     </script>
   </body>
 </html>
